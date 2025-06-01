@@ -1,2 +1,7 @@
-# trab_estatistica
-trabalho em grupo de estatística, com o dataset Top Songs Spotify
+# 🧮 Trabalho de Estatística em Grupo 
+
+> Alunas: Amanda Barbosa, Letícia Garrido
+
+> Professor: Leopoldo André Dutra
+
+
