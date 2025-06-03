@@ -5,30 +5,25 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.svm import SVR
 from xgboost import XGBRegressor
 
-def get_modelos():
+def get_modelos_regressao():
     """
-    Retorna um dicionário com instâncias de modelos de regressão sem restrições de recursos.
+    Retorna um dicionário com instâncias de modelos de regressão.
+    Inclui agora: LinearRegression, RandomForestRegressor, SVR e XGBRegressor.
     """
     return {
         'Linear Regression': LinearRegression(),
-
         'Random Forest Regressor': RandomForestRegressor(
-            # Nenhum max_depth ou n_estimators reduzido
-            random_state=42,
-            n_jobs=-1
+            n_estimators=30, max_depth=8, n_jobs=-1, random_state=42
         ),
-
         'SVR': SVR(
-            kernel='rbf',   # padrão
-            C=1.0,          # pode ajustar via validação cruzada
-            epsilon=0.1     # pode ajustar também
-            # sem max_iter → vai rodar até convergir
+            kernel='rbf',       # padrão
+            C=1.0,              # penalização
+            epsilon=0.1,        # margem de tolerância
+            cache_size=200,     # em MB
+            max_iter=100000     # limitar iterações para não travar
         ),
-
         'XGBoost Regressor': XGBRegressor(
-            # Sem n_estimators ou max_depth limitados
-            random_state=42,
-            n_jobs=-1,
-            verbosity=0
+            n_estimators=50, max_depth=6, learning_rate=0.1,
+            n_jobs=-1, random_state=42, verbosity=0
         )
     }
