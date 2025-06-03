@@ -36,7 +36,7 @@ Cada membro implementou ao menos 3 modelos.
 4. Rode o arquivo: `python -m src.main`
 
 ## 👥 Autoria
-- Amanda: Regrassão Linear, Random Forest, XGBoost e SVR
+- Amanda: Regrassão Linear, Random Forest, XGBoost e SVR(demorou dms, não rodou tudo)
 - Letícia: ....
 
 ## 💬 Uso de IA Generativa
