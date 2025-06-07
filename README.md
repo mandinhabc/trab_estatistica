@@ -17,10 +17,12 @@ Este projeto realiza uma análise comparativa entre modelos de regressão estat�
 
 ## 🧠 Modelos Utilizados
 - Regressão Linear
-- _Regressão Logística_ (?)
 - Random Forest
 - XGBoost
 - SVR
+- Decision Tree
+- KNN
+- MLP
 
 Cada membro implementou ao menos 3 modelos.
 
@@ -37,7 +39,7 @@ Cada membro implementou ao menos 3 modelos.
 
 ## 👥 Autoria
 - Amanda: Regrassão Linear, Random Forest, XGBoost e SVR(demorou dms, não rodou tudo)
-- Letícia: ....
+- Letícia: Árvore de Decisão, KNN, MLP
 
 ## 💬 Uso de IA Generativa
 Foi utilizado para utilização das bibliotecas de Machine Learning, e um esqueleto para o main
