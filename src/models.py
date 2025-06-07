@@ -1,14 +1,16 @@
-# src/models.py
-
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.svm import SVR
 from xgboost import XGBRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.neural_network import MLPRegressor
 
-def get_modelos_regressao():
+def get_modelos():
     """
     Retorna um dicionário com instâncias de modelos de regressão.
-    Inclui agora: LinearRegression, RandomForestRegressor, SVR e XGBRegressor.
+    Inclui agora: LinearRegression, RandomForestRegressor, SVR, XGBRegressor,
+    DecisionTreeRegressor, KNeighborsRegressor e MLPRegressor.
     """
     return {
         'Linear Regression': LinearRegression(),
@@ -25,5 +27,15 @@ def get_modelos_regressao():
         'XGBoost Regressor': XGBRegressor(
             n_estimators=50, max_depth=6, learning_rate=0.1,
             n_jobs=-1, random_state=42, verbosity=0
+        ),
+        'Decision Tree Regressor': DecisionTreeRegressor(
+            max_depth=5, random_state=42
+        ),
+        'KNN Regressor': KNeighborsRegressor(
+            n_neighbors=5, n_jobs=-1
+        ),
+        'MLP Regressor': MLPRegressor(
+            hidden_layer_sizes=(100,), activation='relu',
+            solver='adam', max_iter=200, random_state=42
         )
     }
