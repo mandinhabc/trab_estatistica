@@ -1,3 +1,18 @@
+## 1. onde fazer?
+da pra fazer tudo isso pelo terminal do proprio vscode, mas a ideia é fazer pelo cmd do pc 
+
+## 2. Onde começa
+
+em ambos os locais tem que verificar se o diretorio ta certo. 
+é pra ser algo tipo ```C:\.....\trab_estatistica```
+
+se não for ai vc vai abrindo as pastas pelo terminal 
+
+ - ver as pastas: ```ls```
+ - entrar nas pastas:```cd nome da pasta```
+
+obs: se colocar o caminho todo no cd tbm funciona, tipo ```cd C:\Users\onedrive\facul\trab_estatistica```
+
 ## 3. Configurar Ambiente Virtual
 Instalando o ambiente:
 
