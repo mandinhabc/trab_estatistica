@@ -11,9 +11,9 @@ Este projeto realiza uma análise comparativa entre modelos de regressão estat�
 
 ## 📂 Dataset
 - Fonte: [Link do dataset](https://drive.google.com/file/d/1Cg4GNIvuvjtH4ZJSEAY5Mc5z7THT2CRQ/view?usp=drive_link)
-- Nº de amostras: 1.728.382
+- Nº de amostras: 1.728.382 (100.000 utilizadas)
 - Nº de variáveis: 25 (numéricas e categóricas)
-- Target: contínuo / binário (?)
+- Target: contínuo 
 
 ## 🧠 Modelos Utilizados
 - Regressão Linear
